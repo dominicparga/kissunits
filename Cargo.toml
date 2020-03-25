@@ -1,30 +1,22 @@
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [package]
-name = "template-rust" # lib.rs
-default-run = "my_binary" # bin/my_binary.rs
+name = "kissunits" # lib.rs
 # Changing this version in a branch 'release' and pushing it to
 # GitHub will lead to publishing it automatically to crates.io.
 # Hence do not forget updating Unreleased in CHANGELOG.md.
 version = "0.0.0" # !!!
-description = "Description"
+description = "Different units (like distances or durations), keeping it simple and smart"
 edition = "2018"
 
 authors = [
     "Parga Cacheiro, Dominic (dominic.parga@gmail.com)",
 ]
-repository = "https://github.com/dominicparga/template-rust"
+repository = "https://github.com/dominicparga/kissunits"
 readme = "README.md"
 keywords = ["", "", "", "", ""]
 categories = ["", "", "", ""]
 license = "Apache-2.0"
-
-
-[features]
-
-
-[[bin]]
-name = 'my_binary' # bin/my_binary.rs
 
 
 [[example]]

@@ -1,6 +1,6 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
+use kissunits::helpers;
 use std::{thread, time};
-use template_rust::helpers;
 
 fn criterion_benchmark(c: &mut Criterion) {
     helpers::init_logging("WARN", vec![]).expect("No user-input, so this should be fine.");

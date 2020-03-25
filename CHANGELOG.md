@@ -53,5 +53,5 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 [keepachangelog]: https://keepachangelog.com/en/
 [semver]: https://semver.org/
 
-[github/self/unreleased]: https://github.com/dominicparga/template-rust/compare/v0.0.0...HEAD
-[github/self/v0.0.0]: https://github.com/dominicparga/template-rust/releases/tag/v0.0.0
+[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v0.0.0...HEAD
+[github/self/v0.0.0]: https://github.com/dominicparga/kissunits/releases/tag/v0.0.0
