@@ -6,7 +6,7 @@ name = "kissunits" # lib.rs
 # GitHub will lead to publishing it automatically to crates.io.
 # Hence do not forget updating Unreleased in CHANGELOG.md.
 version = "1.0.1" # !!!
-description = "Different units (like distances or durations), keeping it small and simple"
+description = "Different units (like distances or coordinates), keeping it small and simple"
 edition = "2018"
 
 authors = [
@@ -14,7 +14,7 @@ authors = [
 ]
 repository = "https://github.com/dominicparga/kissunits"
 readme = "README.md"
-keywords = ["meters", "seconds", "si-units", "kmph", "metrics"]
+keywords = ["distance", "meters", "si-units", "velocity", "haversine"]
 categories = ["data-structures", "date-and-time", "mathematics", "science"]
 license = "Apache-2.0"
 
