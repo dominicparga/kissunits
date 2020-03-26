@@ -15,4 +15,5 @@ limitations under the License.
 
 Purpose
 
-Explain the purpose of your project here.
+The repository 'kissunits' provides a simple and explicit implementation
+of units, without specialties or complex/implicit behaviour.
