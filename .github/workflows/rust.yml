@@ -17,7 +17,7 @@ jobs:
     - name: Run tests
       run: |
         cargo test --verbose
-        cargo run --example my_example
+        cargo run --example basic
         cargo fmt -- --check
     - name: Build docs
       run: cargo doc
@@ -36,7 +36,7 @@ jobs:
     - name: Run tests
       run: |
         cargo test --verbose
-        cargo run --example my_example
+        cargo run --example basic
         cargo fmt -- --check
   nightly:
     runs-on: ubuntu-latest
@@ -56,7 +56,7 @@ jobs:
     - name: Run tests
       run: |
         cargo test --verbose
-        cargo run --example my_example
+        cargo run --example basic
         cargo fmt -- --check
       continue-on-error: true
   benches:
