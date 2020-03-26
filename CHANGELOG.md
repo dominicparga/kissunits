@@ -8,7 +8,8 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ## Table of contents
 
 1. [Unreleased](#unreleased)
-1. [v1.0.1](#v1.0.1)
+1. [v1.0.2](#v1.0.2)
+    1. [v1.0.1](#v1.0.1)
     1. [v1.0.0](#v1.0.0)
 1. [v0.0.0](#v0.0.0)
 
@@ -45,7 +46,25 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 \-
 
 
+## [v1.0.2][github/self/v1.0.2] <a name="v1.0.2"></a>
+
+### Changed <a name="v1.0.2/changed"></a>
+
+- Change `Cargo.toml`-keywords, referencing coordinates, haversine, and general names (`kmph` becomes `velocity`).
+
+
+### Fixed <a name="v1.0.2/fixed"></a>
+
+- Build before publishing in GitHub-action.
+  When deploying, to get the current version from `Cargo`, a `Cargo.lock` has to be built, which doesn't happen when publishing.
+
+
 ## [v1.0.1][github/self/v1.0.1] <a name="v1.0.1"></a>
+
+### Removed <a name="v1.0.1/removed"></a>
+
+- Remove __`Cargo.lock`__ from version-control since this repo has no binaries.
+
 
 ### Fixed <a name="v1.0.1/fixed"></a>
 
@@ -95,7 +114,8 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 [keepachangelog]: https://keepachangelog.com/en/
 [semver]: https://semver.org/
 
-[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.0.1...HEAD
+[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.0.2...HEAD
+[github/self/v1.0.2]: https://github.com/dominicparga/kissunits/compare/v1.0.1...v1.0.2
 [github/self/v1.0.1]: https://github.com/dominicparga/kissunits/compare/v1.0.0...v1.0.1
 [github/self/v1.0.0]: https://github.com/dominicparga/kissunits/compare/v0.0.0...v1.0.0
 [github/self/v0.0.0]: https://github.com/dominicparga/kissunits/releases/tag/v0.0.0
