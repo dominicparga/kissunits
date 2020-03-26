@@ -1,4 +1,3 @@
-pub mod defaults;
 pub mod distance;
 pub mod geo;
 pub mod speed;
