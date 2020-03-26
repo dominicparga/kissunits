@@ -17,7 +17,10 @@ Goal of this repo is to provide a simple and explicit implementation of units, w
 An example, including an example for forbidden implicit behaviour, is the following code-snippet:
 
 ```rust
-use kissunits::{distance::{Meters, Kilometers}, time::{Hours, Seconds}};
+use kissunits::{
+    distance::{Kilometers, Meters},
+    time::{Hours, Seconds},
+};
 
 fn main() {
     // use the struct directly
