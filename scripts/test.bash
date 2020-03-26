@@ -10,4 +10,4 @@ CUR_DIR="$(dirname "$(pwd)${0:1}")"
 
 # test
 cargo test
-cargo run --example my_example
+cargo run --example basic

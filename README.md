@@ -1,4 +1,4 @@
-# kissunits
+# Units [kept small and simple][wikipedia/kiss-principle]
 
 [![Build Status nightly][github/self/actions/badge]][github/self/actions]
 
@@ -12,32 +12,57 @@
 [![License][github/self/license/badge]][github/self/license]
 
 Welcome! `:)`
-Goal of this repo is to provide a simple implementation of units, without specialties.
+Goal of this repo is to provide a simple and explicit implementation of units, without specialties or complex/implicit behaviour.
 
-## Reason for `version < 1.0.0`
+An example, including an example for forbidden implicit behaviour, is the following code-snippet:
 
-I hate all those projects staying with version `< 1.0.0` forever.
-This section helps to remind everyone including myself, why I am not on version `1.0.0` yet, or whether I should already be above.
+```rust
+use kissunits::{distance::{Meters, Kilometers}, time::{Hours, Seconds}};
+
+fn main() {
+    // use the struct directly
+    let m = Meters(72_000.0);
+    // or use the factory-function 'new(...)'
+    let h = Hours::new(2.0);
+
+    // compile-error since resulting unit is not clear
+    println!("{}", m / h); // ERROR
+
+    // prints 36 km/h
+    let km = Kilometers::from(m);
+    println!("{} / {} = {}", km, h, km / h);
+
+    // prints 10 m/s
+    let s = Seconds::from(h);
+    println!("{} / {} = {}", m, s, m / s);
+}
+```
+
+One could argue, that the resulting type could be specified explicitly, like
+
+```rust
+let mps: MetersPerSecond = m / h;
+```
+
+but this would lead to implicit rounding errors.
 
 
 ## Setup and usage
-
-### Long story short
 
 Rust has a build-tool called `cargo`, which can be used to run everything except scripts in `scripts/`.
 
 ```zsh
 # Just executing some easy cargo-build-commands
 ./scripts/build.sh
-# Execute the binary
-./target/release/my_binary
+# Run the example
+cargo run --example basic
 ```
 
 
 ## Credits
 
 The project started in the early 2020.
-This page honors the workers and helpers of this project, sorted by their last names.
+This section honors the workers and helpers of this project, sorted by their last names.
 
 __[Dominic Parga Cacheiro][github/dominicparga]__  
 has written these units.
@@ -64,3 +89,4 @@ has written these units.
 [github/self/tree/examples]: https://github.com/dominicparga/kissunits/tree/nightly/examples
 [github/self/wiki/usage]: https://github.com/dominicparga/kissunits/wiki/Usage
 [github/servo/rust-smallvec]: https://github.com/servo/rust-smallvec
+[wikipedia/kiss-principle]: https://en.wikipedia.org/wiki/KISS_principle
