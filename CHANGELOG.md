@@ -53,6 +53,12 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 - Change `Cargo.toml`-keywords, referencing coordinates, haversine, and general names (`kmph` becomes `velocity`).
 
 
+### Fixed <a name="v1.0.2/fixed"></a>
+
+- Build before publishing in GitHub-action.
+  When deploying, to get the current version from `Cargo`, a `Cargo.lock` has to be built, which doesn't happen when publishing.
+
+
 ## [v1.0.1][github/self/v1.0.1] <a name="v1.0.1"></a>
 
 ### Removed <a name="v1.0.1/removed"></a>
