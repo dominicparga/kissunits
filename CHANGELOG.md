@@ -62,6 +62,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Deprecated <a name="v1.0.0/deprecated></a>
 
 - __Documentation__ should be nicer.
+- `README` shows failing `nightly`-build.
 
 
 ### Removed <a name="unreleased/removed"></a>
