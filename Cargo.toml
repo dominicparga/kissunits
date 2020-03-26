@@ -22,7 +22,3 @@ license = "Apache-2.0"
 [[example]]
 name = "basic"
 path = "examples/basic.rs"
-
-
-[dependencies]
-smallvec = "1" # inlining small vecs

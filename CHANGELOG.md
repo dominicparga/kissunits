@@ -59,6 +59,11 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 - Update __license__.
 
 
+### Deprecated <a name="v1.0.0/deprecated></a>
+
+- __Documentation__ should be nicer.
+
+
 ### Removed <a name="unreleased/removed"></a>
 
 - Remove __`benchmarks`__.
