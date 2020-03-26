@@ -17,7 +17,10 @@ Goal of this repo is to provide a simple and explicit implementation of units, w
 An example, including an example for forbidden implicit behaviour, is the following code-snippet:
 
 ```rust
-use kissunits::{distance::{Meters, Kilometers}, time::{Hours, Seconds}};
+use kissunits::{
+    distance::{Kilometers, Meters},
+    time::{Hours, Seconds},
+};
 
 fn main() {
     // use the struct directly
@@ -70,7 +73,7 @@ has written these units.
 
 [crates.io/self]: https://crates.io/crates/kissunits
 [crates.io/self/badge]: https://img.shields.io/crates/v/kissunits?style=for-the-badge
-[docs.rs/self]: https://docs.rs/kissunits/0/
+[docs.rs/self]: https://docs.rs/kissunits/
 [docs.rs/self/badge]: https://img.shields.io/crates/v/kissunits?color=informational&label=docs&style=for-the-badge
 [github/dominicparga]: https://github.com/dominicparga
 [github/lesstat/cyclops/blob/README]: https://github.com/Lesstat/cyclops/blob/master/README.md#graph-data
