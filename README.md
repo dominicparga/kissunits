@@ -70,7 +70,7 @@ has written these units.
 
 [crates.io/self]: https://crates.io/crates/kissunits
 [crates.io/self/badge]: https://img.shields.io/crates/v/kissunits?style=for-the-badge
-[docs.rs/self]: https://docs.rs/kissunits/0/
+[docs.rs/self]: https://docs.rs/kissunits/
 [docs.rs/self/badge]: https://img.shields.io/crates/v/kissunits?color=informational&label=docs&style=for-the-badge
 [github/dominicparga]: https://github.com/dominicparga
 [github/lesstat/cyclops/blob/README]: https://github.com/Lesstat/cyclops/blob/master/README.md#graph-data
