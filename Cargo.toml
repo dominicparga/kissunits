@@ -5,7 +5,7 @@ name = "kissunits" # lib.rs
 # Changing this version in a branch 'release' and pushing it to
 # GitHub will lead to publishing it automatically to crates.io.
 # Hence do not forget updating Unreleased in CHANGELOG.md.
-version = "0.0.0" # !!!
+version = "1.0.0" # !!!
 description = "Different units (like distances or durations), keeping it small and simple"
 edition = "2018"
 
