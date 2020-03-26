@@ -8,8 +8,9 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ## Table of contents
 
 1. [Unreleased](#unreleased)
-1. [v1.0.0](#v1.0.0)
-    1. [v0.0.0](#v0.0.0)
+1. [v1.0.1](#v1.0.1)
+    1. [v1.0.0](#v1.0.0)
+1. [v0.0.0](#v0.0.0)
 
 
 ## [Unreleased][github/self/unreleased] <a name="unreleased"></a>
@@ -44,6 +45,16 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 \-
 
 
+## [v1.0.1][github/self/v1.0.1] <a name="v1.0.1"></a>
+
+### Fixed <a name="v1.0.1/fixed"></a>
+
+- Fix `README.md`__
+  - Fix __failing `nightly`-badge__
+  - __Format example-code__
+  - Fix __hardcoded docs-link__
+
+
 ## [v1.0.0][github/self/v1.0.0] <a name="v1.0.0"></a>
 
 ### Added <a name="v1.0.0/added"></a>
@@ -62,7 +73,9 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Deprecated <a name="v1.0.0/deprecated></a>
 
 - __Documentation__ should be nicer.
-- `README` shows failing `nightly`-build.
+- `README.md` shows failing `nightly`-build.
+- `README.md` has example-code not formatted properly.
+- `README.md` has hardcoded version 0 for docs.
 
 
 ### Removed <a name="unreleased/removed"></a>
@@ -82,6 +95,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 [keepachangelog]: https://keepachangelog.com/en/
 [semver]: https://semver.org/
 
-[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.0.0...HEAD
+[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.0.1...HEAD
+[github/self/v1.0.1]: https://github.com/dominicparga/kissunits/compare/v1.0.0...v1.0.1
 [github/self/v1.0.0]: https://github.com/dominicparga/kissunits/compare/v0.0.0...v1.0.0
 [github/self/v0.0.0]: https://github.com/dominicparga/kissunits/releases/tag/v0.0.0
