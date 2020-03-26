@@ -14,7 +14,7 @@ authors = [
 ]
 repository = "https://github.com/dominicparga/kissunits"
 readme = "README.md"
-keywords = ["units", "meters", "seconds", "kiss", "si-units"]
+keywords = ["meters", "seconds", "si-units", "kmph", "metrics"]
 categories = ["data-structures", "date-and-time", "mathematics", "science"]
 license = "Apache-2.0"
 
