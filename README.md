@@ -85,7 +85,7 @@ has written these units.
 [github/self/blob/changelog/badge]: https://img.shields.io/badge/CHANGELOG-nightly-blueviolet?style=for-the-badge
 [github/self/last-commit]: https://github.com/dominicparga/kissunits/commits
 [github/self/last-commit/badge]: https://img.shields.io/github/last-commit/dominicparga/kissunits?style=for-the-badge
-[github/self/license]: https://github.com/dominicparga/kissunits/blob/nightly/LICENSE
+[github/self/license]: https://github.com/dominicparga/kissunits/blob/nightly/LICENSE.md
 [github/self/license/badge]: https://img.shields.io/badge/license-Apache--2.0-green?style=for-the-badge
 [github/self/tags]: https://github.com/dominicparga/kissunits/tags
 [github/self/tags/badge]: https://img.shields.io/github/v/tag/dominicparga/kissunits?sort=semver&style=for-the-badge
