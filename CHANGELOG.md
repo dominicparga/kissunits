@@ -8,7 +8,8 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ## Table of contents
 
 1. [Unreleased](#unreleased)
-1. [v1.0.2](#v1.0.2)
+1. [v1.0.3](#v1.0.3)
+    1. [v1.0.2](#v1.0.2)
     1. [v1.0.1](#v1.0.1)
     1. [v1.0.0](#v1.0.0)
 1. [v0.0.0](#v0.0.0)
@@ -44,6 +45,13 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Security <a name="unreleased/security"></a>
 
 \-
+
+
+## [v1.0.3][github/self/v1.0.3] <a name="v1.0.3"></a>
+
+### Changed <a name="v1.0.3/changed"></a>
+
+- Change style of __LICENSE__ and write it with `markdown`.
 
 
 ## [v1.0.2][github/self/v1.0.2] <a name="v1.0.2"></a>
