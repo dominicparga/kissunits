@@ -8,10 +8,11 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ## Table of contents
 
 1. [Unreleased](#unreleased)
-1. [v1.0.3](#v1.0.3)
-    1. [v1.0.2](#v1.0.2)
-    1. [v1.0.1](#v1.0.1)
-    1. [v1.0.0](#v1.0.0)
+1. [v1.1.0](#v1.1.0)
+    1. [v1.0.3](#v1.0.3)
+        1. [v1.0.2](#v1.0.2)
+        1. [v1.0.1](#v1.0.1)
+        1. [v1.0.0](#v1.0.0)
 1. [v0.0.0](#v0.0.0)
 
 
@@ -45,6 +46,13 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Security <a name="unreleased/security"></a>
 
 \-
+
+
+## [v1.1.0][github/self/v1.1.0] <a name="v1.1.0"></a>
+
+### Added <a name="v1.1.0/added"></a>
+
+- Add division of same unit (e.g. `3 m / 1 m = 3`).
 
 
 ## [v1.0.3][github/self/v1.0.3] <a name="v1.0.3"></a>
@@ -122,7 +130,9 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 [keepachangelog]: https://keepachangelog.com/en/
 [semver]: https://semver.org/
 
-[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.0.2...HEAD
+[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.1.0...HEAD
+[github/self/v1.1.0]: https://github.com/dominicparga/kissunits/compare/v1.0.3...v1.1.0
+[github/self/v1.0.3]: https://github.com/dominicparga/kissunits/compare/v1.0.2...v1.0.3
 [github/self/v1.0.2]: https://github.com/dominicparga/kissunits/compare/v1.0.1...v1.0.2
 [github/self/v1.0.1]: https://github.com/dominicparga/kissunits/compare/v1.0.0...v1.0.1
 [github/self/v1.0.0]: https://github.com/dominicparga/kissunits/compare/v0.0.0...v1.0.0
