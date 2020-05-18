@@ -1,7 +1,7 @@
 use crate::time::{Hours, Seconds};
 use std::{
     fmt::{self, Display},
-    ops::{Add, AddAssign, Deref, DerefMut, Sub, SubAssign},
+    ops::{Add, AddAssign, Deref, DerefMut, Div, Sub, SubAssign},
 };
 
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
@@ -82,5 +82,14 @@ impl Sub<Minutes> for Minutes {
 impl SubAssign<Minutes> for Minutes {
     fn sub_assign(&mut self, other: Minutes) {
         self.0 -= other.0;
+    }
+}
+
+/// f64 = min / min
+impl Div<Minutes> for Minutes {
+    type Output = f64;
+
+    fn div(self, other: Minutes) -> f64 {
+        self.0 / other.0
     }
 }

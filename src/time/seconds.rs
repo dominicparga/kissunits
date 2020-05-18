@@ -6,7 +6,7 @@ use crate::{
 use std::{
     fmt,
     fmt::Display,
-    ops::{Add, AddAssign, Deref, DerefMut, Mul, Sub, SubAssign},
+    ops::{Add, AddAssign, Deref, DerefMut, Div, Mul, Sub, SubAssign},
 };
 
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
@@ -96,5 +96,14 @@ impl Mul<MetersPerSecond> for Seconds {
 
     fn mul(self, speed: MetersPerSecond) -> Meters {
         Meters(speed.0 * self.0)
+    }
+}
+
+/// f64 = s / s
+impl Div<Seconds> for Seconds {
+    type Output = f64;
+
+    fn div(self, other: Seconds) -> f64 {
+        self.0 / other.0
     }
 }

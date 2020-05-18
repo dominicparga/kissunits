@@ -91,3 +91,12 @@ impl Div<KilometersPerHour> for Kilometers {
         Hours(self.0 / speed.0)
     }
 }
+
+/// f64 = km / km
+impl Div<Kilometers> for Kilometers {
+    type Output = f64;
+
+    fn div(self, other: Kilometers) -> f64 {
+        self.0 / other.0
+    }
+}

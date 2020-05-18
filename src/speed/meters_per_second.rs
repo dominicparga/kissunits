@@ -2,7 +2,7 @@ use crate::{distance::Meters, speed::KilometersPerHour, time::Seconds};
 use std::{
     fmt,
     fmt::Display,
-    ops::{Add, AddAssign, Deref, DerefMut, Mul, Sub, SubAssign},
+    ops::{Add, AddAssign, Deref, DerefMut, Div, Mul, Sub, SubAssign},
 };
 
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
@@ -80,5 +80,14 @@ impl Mul<Seconds> for MetersPerSecond {
 
     fn mul(self, duration: Seconds) -> Meters {
         Meters(self.0 * duration.0)
+    }
+}
+
+/// f64 = mps / mps
+impl Div<MetersPerSecond> for MetersPerSecond {
+    type Output = f64;
+
+    fn div(self, other: MetersPerSecond) -> f64 {
+        self.0 / other.0
     }
 }

@@ -91,3 +91,12 @@ impl Div<MetersPerSecond> for Meters {
         Seconds((*self) / (*speed))
     }
 }
+
+/// f64 = m / m
+impl Div<Meters> for Meters {
+    type Output = f64;
+
+    fn div(self, other: Meters) -> f64 {
+        self.0 / other.0
+    }
+}

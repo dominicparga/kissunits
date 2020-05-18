@@ -5,7 +5,7 @@ use crate::{
 };
 use std::{
     fmt::{self, Display},
-    ops::{Add, AddAssign, Deref, DerefMut, Mul, Sub, SubAssign},
+    ops::{Add, AddAssign, Deref, DerefMut, Div, Mul, Sub, SubAssign},
 };
 
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
@@ -95,5 +95,14 @@ impl Mul<KilometersPerHour> for Hours {
 
     fn mul(self, speed: KilometersPerHour) -> Kilometers {
         Kilometers(self.0 * speed.0)
+    }
+}
+
+/// f64 = h / h
+impl Div<Hours> for Hours {
+    type Output = f64;
+
+    fn div(self, other: Hours) -> f64 {
+        self.0 / other.0
     }
 }
