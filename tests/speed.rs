@@ -9,6 +9,26 @@ mod speed {
     };
 
     #[test]
+    fn mps_to_f64() {
+        let from = MetersPerSecond(50.0);
+        let to = MetersPerSecond(100.0) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 25.0;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
+    fn kmph_to_f64() {
+        let from = KilometersPerHour(50.0);
+        let to = KilometersPerHour(100.0) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 25.0;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
     fn mps_to_kmph() {
         let from = MetersPerSecond(50.0);
         let to = KilometersPerHour::from(from);

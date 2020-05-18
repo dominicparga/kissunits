@@ -9,6 +9,36 @@ mod time {
     };
 
     #[test]
+    fn s_to_f64() {
+        let from = Seconds(60.0);
+        let to = Seconds(120.0) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 30.0;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
+    fn min_to_f64() {
+        let from = Minutes(1.0);
+        let to = Minutes(2.0) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 0.5;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
+    fn h_to_f64() {
+        let from = Hours(0.4);
+        let to = Hours(1.6) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 0.1;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
     fn s_to_min() {
         let from = Seconds(1_000.0);
         let to = Minutes::from(from);

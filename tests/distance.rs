@@ -9,6 +9,26 @@ mod distance {
     };
 
     #[test]
+    fn m_to_f64() {
+        let from = Meters(1_000.0);
+        let to = Meters(2_500.0) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 400.0;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
+    fn km_to_f64() {
+        let from = Kilometers(1_000.0);
+        let to = Kilometers(2_500.0) / from;
+        let raw_from = from.0;
+        let raw_to = to;
+        let scale = 400.0;
+        assert!(super::approx_eq(raw_from, scale * raw_to));
+    }
+
+    #[test]
     fn m_to_km() {
         let from = Meters(1_000.0);
         let to = Kilometers::from(from);
