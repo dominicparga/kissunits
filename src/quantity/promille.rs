@@ -1,4 +1,4 @@
-use std::ops::{Add, Deref, Div, Mul};
+use std::ops::{Add, Deref, Div, Mul, Sub};
 
 #[derive(Clone, Copy, Debug, Eq, Ord, PartialOrd, PartialEq)]
 pub struct Promille(pub usize);
@@ -62,6 +62,14 @@ impl Add for Promille {
 
     fn add(self, rhs: Promille) -> Promille {
         Promille(self.0 + rhs.0)
+    }
+}
+
+impl Sub for Promille {
+    type Output = Promille;
+
+    fn sub(self, rhs: Promille) -> Promille {
+        Promille(self.0 - rhs.0)
     }
 }
 

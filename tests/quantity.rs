@@ -66,6 +66,13 @@ mod quantity {
     }
 
     #[test]
+    fn promille_sub_promille() {
+        let a = Promille::from(5);
+        let b = Promille::from(3);
+        assert_eq!(2_000, *(a - b));
+    }
+
+    #[test]
     fn promille_mul_usize() {
         let promille = Promille::from(3);
         let u = 5;
