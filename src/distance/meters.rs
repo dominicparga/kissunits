@@ -8,12 +8,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct Meters(pub f64);
 
-impl Meters {
-    pub fn new(m: f64) -> Meters {
-        Meters(m)
-    }
-}
-
 impl Display for Meters {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} m", self.0)

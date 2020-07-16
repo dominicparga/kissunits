@@ -35,7 +35,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 
 ### Removed <a name="unreleased/removed"></a>
 
-\-
+- All functions `new(...)` (-> breaking change).
 
 
 ### Fixed <a name="unreleased/fixed"></a>

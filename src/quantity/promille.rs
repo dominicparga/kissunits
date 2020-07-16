@@ -4,10 +4,6 @@ use std::ops::{Add, Deref, Div, Mul, Sub};
 pub struct Promille(pub usize);
 
 impl Promille {
-    pub fn new(raw: usize) -> Promille {
-        Promille(raw)
-    }
-
     pub fn from_div(dividend: usize, divisor: usize) -> Promille {
         Promille((1_000 * dividend) / divisor)
     }

@@ -6,8 +6,7 @@ use kissunits::{
 fn main() {
     // use the struct directly
     let m = Meters(72_000.0);
-    // or use the factory-function 'new(...)'
-    let h = Hours::new(2.0);
+    let h = Hours(2.0);
 
     // compile-error since resulting unit is not clear
     // println!("{}", m / h); // ERROR

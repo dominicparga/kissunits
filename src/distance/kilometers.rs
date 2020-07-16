@@ -8,12 +8,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct Kilometers(pub f64);
 
-impl Kilometers {
-    pub fn new(km: f64) -> Kilometers {
-        Kilometers(km)
-    }
-}
-
 impl Display for Kilometers {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} km", self.0)

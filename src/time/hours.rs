@@ -11,12 +11,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct Hours(pub f64);
 
-impl Hours {
-    pub fn new(h: f64) -> Hours {
-        Hours(h)
-    }
-}
-
 impl Display for Hours {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} h", self.0)
