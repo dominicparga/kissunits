@@ -8,12 +8,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct KilometersPerHour(pub f64);
 
-impl KilometersPerHour {
-    pub fn new(kmph: f64) -> KilometersPerHour {
-        KilometersPerHour(kmph)
-    }
-}
-
 impl Display for KilometersPerHour {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} km/h", self.0)

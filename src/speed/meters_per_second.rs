@@ -8,12 +8,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct MetersPerSecond(pub f64);
 
-impl MetersPerSecond {
-    pub fn new(mps: f64) -> MetersPerSecond {
-        MetersPerSecond(mps)
-    }
-}
-
 impl Display for MetersPerSecond {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} m/s", self.0)

@@ -7,12 +7,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct Minutes(pub f64);
 
-impl Minutes {
-    pub fn new(min: f64) -> Minutes {
-        Minutes(min)
-    }
-}
-
 impl Display for Minutes {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} min", self.0)

@@ -12,12 +12,6 @@ use std::{
 #[derive(Debug, Default, Clone, Copy, PartialOrd, PartialEq)]
 pub struct Seconds(pub f64);
 
-impl Seconds {
-    pub fn new(s: f64) -> Seconds {
-        Seconds(s)
-    }
-}
-
 impl Display for Seconds {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} s", self.0)
