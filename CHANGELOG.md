@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ## Table of contents
 
 1. [Unreleased](#unreleased)
+1. [v2.0.0](#v2.0.0)
 1. [v1.1.0](#v1.1.0)
     1. [v1.0.3](#v1.0.3)
         1. [v1.0.2](#v1.0.2)
@@ -35,7 +36,7 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 
 ### Removed <a name="unreleased/removed"></a>
 
-- All functions `new(...)` (-> breaking change).
+\-
 
 
 ### Fixed <a name="unreleased/fixed"></a>
@@ -46,6 +47,20 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 ### Security <a name="unreleased/security"></a>
 
 \-
+
+
+
+## [v2.0.0][github/self/v2.0.0] <a name="v2.0.0"></a>
+
+### Added <a name="v2.0.0/added"></a>
+
+- Call examples in test.
+- Add promille as quantity.
+
+
+### Removed <a name="v2.0.0/removed"></a>
+
+- All functions `new(...)` are removed (-> breaking change).
 
 
 ## [v1.1.0][github/self/v1.1.0] <a name="v1.1.0"></a>
@@ -130,7 +145,8 @@ The format is based on [Keep a Changelog][keepachangelog], and this project adhe
 [keepachangelog]: https://keepachangelog.com/en/
 [semver]: https://semver.org/
 
-[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v1.1.0...HEAD
+[github/self/unreleased]: https://github.com/dominicparga/kissunits/compare/v2.0.0...HEAD
+[github/self/v2.0.0]: https://github.com/dominicparga/kissunits/compare/v1.1.0...v2.0.0
 [github/self/v1.1.0]: https://github.com/dominicparga/kissunits/compare/v1.0.3...v1.1.0
 [github/self/v1.0.3]: https://github.com/dominicparga/kissunits/compare/v1.0.2...v1.0.3
 [github/self/v1.0.2]: https://github.com/dominicparga/kissunits/compare/v1.0.1...v1.0.2
